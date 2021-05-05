@@ -1,0 +1,58 @@
+.title{
+    display: flex;
+    justify-content: space-evenly;
+}
+.title input{
+    width: 50%;
+}
+
+.shortContent{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+.shortContent label b{
+    position: relative;
+    left: 24px;
+}
+.shortContent input{
+    width: 52%;
+    margin-right: 80px
+}
+.image{
+    display: flex;
+    justify-content: space-around;
+}
+.image input{
+    width: 50%;
+    margin-right: 90px;
+}
+.image label b{
+    position: relative;
+    left: 42px;
+}
+.full-content{
+    margin: 22px;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+.option{
+    margin: 10px 27px;
+}
+.option .submit{
+    margin-right: 7px;
+}
+.home{
+    margin-right: 24px;
+}
+.home button{
+    border-radius: 8px;
+    padding: 12px;
+}
+.back{
+    display: flex;
+    justify-content: space-between;
+}
