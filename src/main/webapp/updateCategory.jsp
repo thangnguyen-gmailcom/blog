@@ -73,6 +73,7 @@
                                     <form action="/Admin-category?action=updateCategory&id=${category.id}" method="post"
                                           class="form-horizontal">
                                         <input type="hidden" value="${mess}" id="message">
+                                        <input type="hidden" value="${message}" id="messages">
                                         <div class="row form-group">
                                             <div class="col col-md-3">
                                                 <label for="disabled-input" class=" form-control-label">id</label>
@@ -165,6 +166,10 @@
     let mess = document.getElementById("message").value;
     if (mess != "") {
         toastr.success(mess, 'title')
+    }
+    let message = document.getElementById("messages").value;
+    if (message != "") {
+        toastr.error(message, 'title')
     }
 </script>
 </body>

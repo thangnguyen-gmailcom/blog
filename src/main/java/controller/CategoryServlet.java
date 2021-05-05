@@ -44,8 +44,9 @@ public class CategoryServlet extends HttpServlet {
         Category category = new Category(id, name);
         try {
             categoryService.update(category);
+            request.setAttribute("mess", "success !");
         } catch (SQLException throwables) {
-            throwables.printStackTrace();
+            request.setAttribute("message", "input error !");
         }
         request.setAttribute("category", category);
         RequestDispatcher dispatcher = request.getRequestDispatcher("updateCategory.jsp");
